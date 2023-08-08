@@ -22,3 +22,38 @@ Nos anos anteriores, você só podia executá-lo no Windows Pro, Enterprise ou q
 
 Você também pode executar o VirtualBox 6+ ao lado do Docker Desktop, caso tenha projetos mais antigos usando o VirtualBox (talvez com o Vagrant também).
 
+_______________________________________________________________________
+
+- Aplicação Java:
+
+mvn clean package: gera o arquivo .jar da aplicação.
+no caso foi para pasta target onde o dockerfile identifica o jar gerado da aplicação.
+
+Exemplo no DockerFile:
+
+ADD app/target/docker-to-aws-with-java-0.0.1-SNAPSHOT.jar app.jar
+
+docker-to-aws-with-java-0.0.1-SNAPSHOT.jar: o noem fica configurado no pom.xml da aplicação.
+
+Docker Compose:
+ports:
+    - "3308:3306"
+- porta do container: porta do host.
+
+Comando:
+docker-compose up -d --build
+- build: para construir a imagem.
+- up: para subir o container.
+- -d: para rodar em background.
+
+docker ps -a
+- lista todos os containers.
+ps: processos.
+-a : all.
+
+
+docker-compose down
+- para desligar o container.
+
+Conectar em uma imagem (container): mysql
+docker exec -it <ID> mysql -u docker -p
