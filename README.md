@@ -57,3 +57,19 @@ docker-compose down
 
 Conectar em uma imagem (container): mysql
 docker exec -it <ID> mysql -u docker -p
+
+
+_______________________________
+
+
+
+CCP: Certificate of Cloud Practitioner;
+- Certificação da AWS.
+- Como é a prova: 65 questões, 90 minutos, 70% de acerto.
+
+Ideia de roteiro de Certificações:
+Pratictioner -> Solutions Architect -> Developer -> SysOps -> DevOps Engineer -> Solutions Architect Professional -> DevOps Professional:
+
+AWS Certified Cloud Practitioner.
+Código de desconto: AWLA276F0E59 (aplicar no checkout, última etapa).
+
