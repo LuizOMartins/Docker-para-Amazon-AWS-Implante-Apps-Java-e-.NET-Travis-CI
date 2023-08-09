@@ -79,3 +79,9 @@ Atenção ao utilizar a AWS:
 - Estude aprenda e apague maquinas e instâncias.
 
 Travis
+
+_______________________________
+
+Instalando AWS  CLI: (Command Line Interface)   
+Local onde fica : C:\Users\<usuario>\.aws
+- aws configure: para configurar a AWS.
