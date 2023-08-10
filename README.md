@@ -85,3 +85,11 @@ _______________________________
 Instalando AWS  CLI: (Command Line Interface)   
 Local onde fica : C:\Users\<usuario>\.aws
 - aws configure: para configurar a AWS.
+
+_______________________________
+
+EC2: Elastic Compute Cloud.
+- Serviço de computação em nuvem que permite a criação e utilização de máquinas virtuais na AWS.
+
+
+_______________________________
