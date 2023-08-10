@@ -90,6 +90,40 @@ _______________________________
 
 EC2: Elastic Compute Cloud.
 - Serviço de computação em nuvem que permite a criação e utilização de máquinas virtuais na AWS.
-
+SSH: Secure Shell.
 
 _______________________________
+
+
+RDS: Relational Database Service.
+- Serviço de banco de dados relacional na AWS.
+- MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Amazon Aurora.
+
+_______________________________
+
+http://localhost:8080/swagger-ui.html#/PersonEndpoint/findAllUsingGET
+
+_______________________________
+
+Principais Comandos Docker:
+
+docker ps -a: lista todos os containers.
+docker images: lista todas as imagens.
+docker rm <ID>: remove um container.
+docker rmi <ID>: remove uma imagem.
+docker exec -it <ID> bash: entra no container.
+docker stop <ID>: para o container.
+docker start <ID>: inicia o container.
+docker logs <ID>: mostra os logs do container.
+docker-compose up -d --build: sobe o container.
+docker-compose down: desliga o container.
+
+docker run -d -p 80:8080  docker-to-aws-with-java
+- -d: para rodar em background.
+- -p: para mapear a porta do container com a porta do host.
+- docker-to-aws-with-java: nome da imagem.
+
+Contianer: é uma instancia de uma imagem.
+Imagem: é um template para criar um container.
+
+uma imagem é uma representação estática e autossuficiente de uma aplicação, enquanto um container é uma instância em execução dessa imagem, com seu próprio ambiente isolado. O uso de imagens e containers no Docker facilita a implantação, o gerenciamento e a escalabilidade de aplicativos, tornando a distribuição de software mais consistente e eficiente em diferentes ambientes.

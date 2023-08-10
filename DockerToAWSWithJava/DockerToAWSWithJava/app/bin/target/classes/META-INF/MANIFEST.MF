@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: luyz_
+Build-Jdk: 17.0.7
+Implementation-Title: docker-to-aws-with-java
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: br.com.erudio
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/docker-to-aws-with-java
+Created-By: Maven Integration for Eclipse
+
