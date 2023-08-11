@@ -127,3 +127,20 @@ Contianer: é uma instancia de uma imagem.
 Imagem: é um template para criar um container.
 
 uma imagem é uma representação estática e autossuficiente de uma aplicação, enquanto um container é uma instância em execução dessa imagem, com seu próprio ambiente isolado. O uso de imagens e containers no Docker facilita a implantação, o gerenciamento e a escalabilidade de aplicativos, tornando a distribuição de software mais consistente e eficiente em diferentes ambientes.
+
+
+
+_______________________________
+
+ECR: Elastic Container Registry.
+- Serviço de registro de imagens de containers na AWS.
+
+
+ECS: Elastic Container Service.
+- Serviço de orquestração de containers na AWS.
+
+Cluster ECS: é um grupo de instâncias EC2 que são executadas em um ou mais locais de disponibilidade. Um cluster pode conter vários serviços e tarefas. 
+
+Cluster: é um grupo de instâncias EC2 que são executadas em um ou mais locais de disponibilidade. Um cluster pode conter vários serviços e tarefas.
+
+Task Definition: é um arquivo JSON que descreve uma ou mais tarefas, definindo parâmetros como CPU, memória, porta de contêiner, imagem de contêiner, etc.
