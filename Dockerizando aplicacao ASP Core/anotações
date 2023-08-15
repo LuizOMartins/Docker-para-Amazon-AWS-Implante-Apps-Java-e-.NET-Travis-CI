@@ -1,0 +1,69 @@
+1 - Pego codigo da aplicação
+2 - Criando dockerfile
+3  - Criando docker compose
+4 - Editando docker compose:
+-- adaptando banco de dados e nomes
+5 - ajustando docker-componse.projetos
+6 - Criando o dokcerfile do banco de dados
+-- inserindo dados do bacno de dados e migrations
+7 - Criando banco de dados RDS (MySQL)
+8 - Criando repositorio no ECR
+9 - Enviando imagem para o ECR e para DockerHub
+10 - (fluxo inicial)
+
+Com DockerHub e Travis CI
+1 - Pego codigo da aplicação
+2 - Criando dockerfile
+3  - Criando docker compose
+4 - Editando docker compose:
+-- adaptando banco de dados e nomes
+5 - ajustando docker-componse.projetos
+6 - Criando o dokcerfile do banco de dados
+-- inserindo dados do bacno de dados e migrations
+7 - Criando banco de dados RDS (MySQL)
+8 - Criando repositorio no ECR
+9 - Enviando imagem para o ECR e para DockerHub
+10 - Habilitando Travis CI no repositorio
+11 - Criando arquivo .travis.yml
+12 - Configurar Usuario e senha no Travis CI
+13 - Fazendo Commit o travis CI inicializa o processo de Build
+14 - Configuração de inbuild roles na AWS (banco de dados)
+
+
+
+Com AWS (ESR)  e Travis CI
+1 - Pego codigo da aplicação
+2 - Criando dockerfile
+3  - Criando docker compose
+4 - Editando docker compose:
+-- adaptando banco de dados e nomes
+5 - ajustando docker-componse.projetos
+6 - Criando o dokcerfile do banco de dados
+-- inserindo dados do bacno de dados e migrations
+7 - Criando banco de dados RDS (MySQL)
+8 - Criando repositorio no ECR
+9 - Enviando imagem para o ECR e para DockerHub
+10 - Criando variaveis no Travis CI da AWS
+11 - Criando arquivo .travis.yml
+-- Configurando o arquivo .travis.yml
+
+
+______________________________________
+
+
+Criação de um Cluster ECS (Elastic Container Service) para .NET Core
+
+1 - Criar um cluster ECS
+2 - Criando a Task Definition:
+-- TaskDefinition: é um arquivo JSON que descreve como um container
+-- deve ser executado dentro de um cluster ECS
+--- por exemplo: qual imagem usar, qual porta expor, qual o comando para executar
+3 - Criando o Service: por exemplo: quantas instancias da task definition, qual o balanceador de carga
+..
+-- Service: é um recurso que permite executar e manter um número especifico
+-- de instancias de uma task definition
+4 - Ajustando permissões ao usuario IAM: para que o cluster ECS possa acessar o ECR, no caso o Travis CI
+5 - Criando o arquivo .travis.yml parater as permissões e realizar o deploy no ECS
+5.1 -- Adicionando variaveis de ambiente no Travis CI da AWS
+6 - ECS deploy: é um plugin do Travis CI que permite realizar o deploy de uma imagem
+7 - Configurando Service para integração 
